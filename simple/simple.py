@@ -21,13 +21,13 @@ if __name__ == '__main__':
     place_list = ['中野', '目黒', '中野']
 
     for num in range(len(to_list)):
-        message.to = To(to_list[num], fullname_list[num], p = num)
+        message.to = To(to_list[num], fullname_list[num], p=num)
 
         message.substitution = [
-            Substitution('fullname', fullname_list[num], p = num),
-            Substitution('familyname', familyname_list[num], p = num),
-            Substitution('place', place_list[num], p = num),
-            ]
+            Substitution('fullname', fullname_list[num], p=num),
+            Substitution('familyname', familyname_list[num], p=num),
+            Substitution('place', place_list[num], p=num),
+        ]
 
     # 送信元を設定
     message.from_email = From(from_address, '送信者名')
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
     # メール送信を行い、レスポンスを表示
     sendgrid_client = SendGridAPIClient(sendgrid_api_key)
-    response = sendgrid_client.send(message = message)
+    response = sendgrid_client.send(message=message)
     print(response.status_code)
     print(response.body)
     print(response.headers)

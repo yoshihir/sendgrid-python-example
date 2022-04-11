@@ -34,11 +34,17 @@
         },
         "sendgrid": {
             "hashes": [
-                "sha256:23b8c29c4a7ceadc62e347580377d71df1326acf215f8356bf0ddc1489ad8b7f",
-                "sha256:dca27904d6fbe4d89d0c3450895f84a68db67f842a985a0af86324292705dd7d"
+                "sha256:ba8d3d39e1f392b9434365d53983b2fc6a458ae0496d2d9e103c15e1743ab66b",
+                "sha256:fa30411c627690fecd0ef6b1d4e1783f2d0272aa14b5fffb133ebd1e31114f16"
             ],
             "index": "pypi",
-            "version": "==6.4.0"
+            "version": "==6.9.7"
+        },
+        "starkbank-ecdsa": {
+            "hashes": [
+                "sha256:73b62b1b3de54bbaa05dedb1a2d951c033432bb074de899e19d4a96a36b21df6"
+            ],
+            "version": "==2.0.3"
         }
     },
     "develop": {}
